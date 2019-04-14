@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		5A47A6772208AE6100C7D129 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A47A6762208AE6100C7D129 /* AppDelegate.swift */; };
-		5A47A6792208AE6100C7D129 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A47A6782208AE6100C7D129 /* ViewController.swift */; };
 		5A47A67C2208AE6100C7D129 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A47A67A2208AE6100C7D129 /* Main.storyboard */; };
 		5A47A67E2208AE6400C7D129 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A47A67D2208AE6400C7D129 /* Assets.xcassets */; };
 		5A47A6812208AE6400C7D129 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A47A67F2208AE6400C7D129 /* LaunchScreen.storyboard */; };
 		5A47A68C2208AE6600C7D129 /* Navigation_Multiple_ScreenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A47A68B2208AE6600C7D129 /* Navigation_Multiple_ScreenTests.swift */; };
 		5A47A6972208AE6600C7D129 /* Navigation_Multiple_ScreenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A47A6962208AE6600C7D129 /* Navigation_Multiple_ScreenUITests.swift */; };
+		5A47A6A52208B16700C7D129 /* ScreenOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A47A6A42208B16700C7D129 /* ScreenOneViewController.swift */; };
+		5A47A6A72208B18000C7D129 /* ScreenTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A47A6A62208B18000C7D129 /* ScreenTwoViewController.swift */; };
+		5A47A6A92208B4D900C7D129 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A47A6A82208B4D900C7D129 /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,6 @@
 /* Begin PBXFileReference section */
 		5A47A6732208AE6100C7D129 /* Navigation Multiple Screen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Navigation Multiple Screen.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A47A6762208AE6100C7D129 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5A47A6782208AE6100C7D129 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5A47A67B2208AE6100C7D129 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5A47A67D2208AE6400C7D129 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A47A6802208AE6400C7D129 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,9 @@
 		5A47A6922208AE6600C7D129 /* Navigation Multiple ScreenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Navigation Multiple ScreenUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A47A6962208AE6600C7D129 /* Navigation_Multiple_ScreenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigation_Multiple_ScreenUITests.swift; sourceTree = "<group>"; };
 		5A47A6982208AE6600C7D129 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A47A6A42208B16700C7D129 /* ScreenOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenOneViewController.swift; sourceTree = "<group>"; };
+		5A47A6A62208B18000C7D129 /* ScreenTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenTwoViewController.swift; sourceTree = "<group>"; };
+		5A47A6A82208B4D900C7D129 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +101,11 @@
 		5A47A6752208AE6100C7D129 /* Navigation Multiple Screen */ = {
 			isa = PBXGroup;
 			children = (
+				5A47A6A42208B16700C7D129 /* ScreenOneViewController.swift */,
+				5A47A6A62208B18000C7D129 /* ScreenTwoViewController.swift */,
 				5A47A6762208AE6100C7D129 /* AppDelegate.swift */,
-				5A47A6782208AE6100C7D129 /* ViewController.swift */,
 				5A47A67A2208AE6100C7D129 /* Main.storyboard */,
+				5A47A6A82208B4D900C7D129 /* Person.swift */,
 				5A47A67D2208AE6400C7D129 /* Assets.xcassets */,
 				5A47A67F2208AE6400C7D129 /* LaunchScreen.storyboard */,
 				5A47A6822208AE6400C7D129 /* Info.plist */,
@@ -256,8 +262,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A47A6792208AE6100C7D129 /* ViewController.swift in Sources */,
+				5A47A6A72208B18000C7D129 /* ScreenTwoViewController.swift in Sources */,
 				5A47A6772208AE6100C7D129 /* AppDelegate.swift in Sources */,
+				5A47A6A92208B4D900C7D129 /* Person.swift in Sources */,
+				5A47A6A52208B16700C7D129 /* ScreenOneViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
